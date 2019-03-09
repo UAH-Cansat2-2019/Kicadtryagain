@@ -1,0 +1,363 @@
+EESchema Schematic File Version 4
+EELAYER 26 0
+EELAYER END
+$Descr A4 11693 8268
+encoding utf-8
+Sheet 1 3
+Title ""
+Date ""
+Rev ""
+Comp ""
+Comment1 ""
+Comment2 ""
+Comment3 ""
+Comment4 ""
+$EndDescr
+$Comp
+L Connector_Generic:Conn_01x02 Battery?
+U 1 1 5C8313DC
+P 1050 650
+F 0 "Battery?" V 1016 462 50  0000 R CNN
+F 1 "battery" V 925 462 50  0000 R CNN
+F 2 "" H 1050 650 50  0001 C CNN
+F 3 "~" H 1050 650 50  0001 C CNN
+	1    1050 650 
+	0    -1   -1   0   
+$EndComp
+$Comp
+L pspice:DIODE D?
+U 1 1 5C8314A7
+P 1250 1250
+F 0 "D?" H 1250 1515 50  0000 C CNN
+F 1 "DIODE" H 1250 1424 50  0000 C CNN
+F 2 "" H 1250 1250 50  0001 C CNN
+F 3 "" H 1250 1250 50  0001 C CNN
+	1    1250 1250
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:Q_NMOS_DGS MOSFET?
+U 1 1 5C8317C9
+P 1650 1250
+F 0 "MOSFET?" H 1855 1296 50  0000 L CNN
+F 1 "MOSFET N" H 1855 1205 50  0000 L CNN
+F 2 "" H 1850 1350 50  0001 C CNN
+F 3 "~" H 1650 1250 50  0001 C CNN
+	1    1650 1250
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	1050 850  1050 950 
+Wire Wire Line
+	1050 950  1750 950 
+Wire Wire Line
+	1750 950  1750 1050
+Connection ~ 1050 950 
+Wire Wire Line
+	1050 950  1050 1250
+$Comp
+L power:GND #PWR?
+U 1 1 5C8318B6
+P 1700 850
+F 0 "#PWR?" H 1700 600 50  0001 C CNN
+F 1 "GND" V 1705 722 50  0000 R CNN
+F 2 "" H 1700 850 50  0001 C CNN
+F 3 "" H 1700 850 50  0001 C CNN
+	1    1700 850 
+	0    -1   -1   0   
+$EndComp
+Wire Wire Line
+	1750 1450 1750 1550
+Wire Wire Line
+	1150 850  1700 850 
+$Comp
+L power:+6V #PWR?
+U 1 1 5C83193A
+P 1750 1550
+F 0 "#PWR?" H 1750 1400 50  0001 C CNN
+F 1 "+6V" H 1765 1723 50  0000 C CNN
+F 2 "" H 1750 1550 50  0001 C CNN
+F 3 "" H 1750 1550 50  0001 C CNN
+	1    1750 1550
+	-1   0    0    1   
+$EndComp
+$Sheet
+S 900  550  1650 1350
+U 5C8319A0
+F0 "Battery" 50
+F1 "file5C83199F.sch" 50
+$EndSheet
+$Comp
+L MCU_Microchip_ATmega:ATxmega128A4U-AU MCU?
+U 1 1 5C831B3F
+P 2650 4900
+F 0 "MCU?" H 3400 3700 50  0000 C CNN
+F 1 "ATxmega128A4U-AU" H 3650 3600 50  0000 C CNN
+F 2 "Package_QFP:TQFP-44_10x10mm_P0.8mm" H 2650 4900 50  0001 C CIN
+F 3 "http://ww1.microchip.com/downloads/en/DeviceDoc/Atmel-8387-8-and16-bit-AVR-Microcontroller-XMEGA-A4U_Datasheet.pdf" H 2650 4900 50  0001 C CNN
+	1    2650 4900
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:+3.3V #PWR?
+U 1 1 5C831E94
+P 2300 7400
+F 0 "#PWR?" H 2300 7250 50  0001 C CNN
+F 1 "+3.3V" H 2315 7573 50  0000 C CNN
+F 2 "" H 2300 7400 50  0001 C CNN
+F 3 "" H 2300 7400 50  0001 C CNN
+	1    2300 7400
+	-1   0    0    1   
+$EndComp
+$Comp
+L power:GND #PWR?
+U 1 1 5C831ECD
+P 2700 7250
+F 0 "#PWR?" H 2700 7000 50  0001 C CNN
+F 1 "GND" H 2705 7077 50  0000 C CNN
+F 2 "" H 2700 7250 50  0001 C CNN
+F 3 "" H 2700 7250 50  0001 C CNN
+	1    2700 7250
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:C C?
+U 1 1 5C831F75
+P 2500 6650
+F 0 "C?" V 2248 6650 50  0000 C CNN
+F 1 "C" V 2339 6650 50  0000 C CNN
+F 2 "" H 2538 6500 50  0001 C CNN
+F 3 "~" H 2500 6650 50  0001 C CNN
+	1    2500 6650
+	0    1    1    0   
+$EndComp
+$Comp
+L pspice:INDUCTOR L?
+U 1 1 5C832040
+P 1950 6900
+F 0 "L?" H 1950 7115 50  0000 C CNN
+F 1 "INDUCTOR" H 1950 7024 50  0000 C CNN
+F 2 "" H 1950 6900 50  0001 C CNN
+F 3 "" H 1950 6900 50  0001 C CNN
+	1    1950 6900
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:CP1 C?
+U 1 1 5C832A4C
+P 2500 6950
+F 0 "C?" V 2752 6950 50  0000 C CNN
+F 1 "CP1" V 2661 6950 50  0000 C CNN
+F 2 "" H 2500 6950 50  0001 C CNN
+F 3 "~" H 2500 6950 50  0001 C CNN
+	1    2500 6950
+	0    -1   -1   0   
+$EndComp
+Wire Wire Line
+	2700 7250 2700 6950
+Wire Wire Line
+	2700 6650 2650 6650
+Wire Wire Line
+	2700 6950 2650 6950
+Connection ~ 2700 6950
+Wire Wire Line
+	2700 6950 2700 6650
+Wire Wire Line
+	2350 6650 2300 6650
+Wire Wire Line
+	2300 6650 2300 6900
+Wire Wire Line
+	2300 6950 2350 6950
+Connection ~ 2300 6950
+Wire Wire Line
+	2300 6950 2300 7400
+$Comp
+L Device:C C?
+U 1 1 5C832D42
+P 1550 7050
+F 0 "C?" H 1435 7004 50  0000 R CNN
+F 1 "C" H 1435 7095 50  0000 R CNN
+F 2 "" H 1588 6900 50  0001 C CNN
+F 3 "~" H 1550 7050 50  0001 C CNN
+	1    1550 7050
+	-1   0    0    1   
+$EndComp
+Text GLabel 2250 6350 0    50   Input ~ 0
+MCUVCC
+Text GLabel 1400 6900 0    50   Input ~ 0
+MCUAVCC
+Wire Wire Line
+	1400 6900 1550 6900
+Connection ~ 1550 6900
+Wire Wire Line
+	1550 6900 1700 6900
+$Comp
+L power:GND #PWR?
+U 1 1 5C832FA9
+P 1550 7200
+F 0 "#PWR?" H 1550 6950 50  0001 C CNN
+F 1 "GND" H 1555 7027 50  0000 C CNN
+F 2 "" H 1550 7200 50  0001 C CNN
+F 3 "" H 1550 7200 50  0001 C CNN
+	1    1550 7200
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	2700 6650 2700 6500
+Wire Wire Line
+	2700 6300 2650 6300
+Connection ~ 2700 6650
+Wire Wire Line
+	2300 6650 2300 6350
+Wire Wire Line
+	2300 6350 2250 6350
+Connection ~ 2300 6650
+Wire Wire Line
+	2200 6900 2300 6900
+Connection ~ 2300 6900
+Wire Wire Line
+	2300 6900 2300 6950
+Text GLabel 2650 3500 1    50   Input ~ 0
+MCUVCC
+Text GLabel 2750 3500 1    50   Input ~ 0
+MCUAVCC
+Wire Wire Line
+	1550 7200 2100 7200
+Wire Wire Line
+	2100 7200 2100 7650
+Wire Wire Line
+	2100 7650 3100 7650
+Wire Wire Line
+	3100 7650 3100 6500
+Wire Wire Line
+	3100 6500 2700 6500
+Connection ~ 1550 7200
+Connection ~ 2700 6500
+Wire Wire Line
+	2700 6500 2700 6300
+$Sheet
+S 950  2950 3250 4800
+U 5C833E95
+F0 "MCU" 50
+F1 "file5C833E94.sch" 50
+$EndSheet
+$Comp
+L Connector_Generic:Conn_01x06 openlog?
+U 1 1 5C833F60
+P 3050 850
+F 0 "openlog?" V 3016 1130 50  0000 L CNN
+F 1 "openlog" V 2925 1130 50  0000 L CNN
+F 2 "" H 3050 850 50  0001 C CNN
+F 3 "~" H 3050 850 50  0001 C CNN
+	1    3050 850 
+	0    1    -1   0   
+$EndComp
+Text GLabel 2850 1050 3    50   Input ~ 0
+USART_RX_PC2
+Text GLabel 2950 1050 3    50   Input ~ 0
+USART_TX_PC3
+Text GLabel 3350 5500 2    50   Input ~ 0
+USART_TX_PC3
+Text GLabel 3350 5400 2    50   Input ~ 0
+USART_RX_PC2
+$Comp
+L power:+3.3V #PWR?
+U 1 1 5C835D44
+P 3100 1650
+F 0 "#PWR?" H 3100 1500 50  0001 C CNN
+F 1 "+3.3V" H 3115 1823 50  0000 C CNN
+F 2 "" H 3100 1650 50  0001 C CNN
+F 3 "" H 3100 1650 50  0001 C CNN
+	1    3100 1650
+	-1   0    0    1   
+$EndComp
+Wire Wire Line
+	3050 1050 3050 1650
+Wire Wire Line
+	3050 1650 3100 1650
+$Comp
+L power:GND #PWR?
+U 1 1 5C8360DB
+P 3200 1250
+F 0 "#PWR?" H 3200 1000 50  0001 C CNN
+F 1 "GND" H 3205 1077 50  0000 C CNN
+F 2 "" H 3200 1250 50  0001 C CNN
+F 3 "" H 3200 1250 50  0001 C CNN
+	1    3200 1250
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	3150 1050 3150 1250
+Wire Wire Line
+	3150 1250 3200 1250
+Wire Wire Line
+	3200 1250 3250 1250
+Wire Wire Line
+	3250 1250 3250 1050
+Connection ~ 3200 1250
+$Sheet
+S 2650 650  1350 1300
+U 5C836C66
+F0 "openlog" 50
+F1 "file5C836C65.sch" 50
+$EndSheet
+$Comp
+L Connector_Generic:Conn_01x02 Moter?
+U 1 1 5C837121
+P 6150 1550
+F 0 "Moter?" H 6229 1542 50  0000 L CNN
+F 1 "Moter" H 6229 1451 50  0000 L CNN
+F 2 "" H 6150 1550 50  0001 C CNN
+F 3 "~" H 6150 1550 50  0001 C CNN
+	1    6150 1550
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:Q_NMOS_DGS Q?
+U 1 1 5C837545
+P 4800 800
+F 0 "Q?" H 5005 846 50  0000 L CNN
+F 1 "Q_NMOS_DGS" H 5005 755 50  0000 L CNN
+F 2 "" H 5000 900 50  0001 C CNN
+F 3 "~" H 4800 800 50  0001 C CNN
+	1    4800 800 
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:Q_NMOS_DGS Q?
+U 1 1 5C83758D
+P 4800 1300
+F 0 "Q?" H 5005 1346 50  0000 L CNN
+F 1 "Q_NMOS_DGS" H 5005 1255 50  0000 L CNN
+F 2 "" H 5000 1400 50  0001 C CNN
+F 3 "~" H 4800 1300 50  0001 C CNN
+	1    4800 1300
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:Q_NMOS_DGS Q?
+U 1 1 5C8379E4
+P 4800 1800
+F 0 "Q?" H 5005 1846 50  0000 L CNN
+F 1 "Q_NMOS_DGS" H 5005 1755 50  0000 L CNN
+F 2 "" H 5000 1900 50  0001 C CNN
+F 3 "~" H 4800 1800 50  0001 C CNN
+	1    4800 1800
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:Q_NMOS_DGS Q?
+U 1 1 5C837A1A
+P 4800 2350
+F 0 "Q?" H 5005 2396 50  0000 L CNN
+F 1 "Q_NMOS_DGS" H 5005 2305 50  0000 L CNN
+F 2 "" H 5000 2450 50  0001 C CNN
+F 3 "~" H 4800 2350 50  0001 C CNN
+	1    4800 2350
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	4900 600  5950 600 
+Wire Wire Line
+	5950 600  5950 1550
+$EndSCHEMATC
