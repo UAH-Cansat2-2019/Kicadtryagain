@@ -4,7 +4,7 @@ EELAYER 26 0
 EELAYER END
 $Descr A4 11693 8268
 encoding utf-8
-Sheet 1 14
+Sheet 1 15
 Title ""
 Date ""
 Rev ""
@@ -1378,10 +1378,6 @@ Text GLabel 4300 1150 1    50   Input ~ 0
 Motor_toggle1
 Text GLabel 4150 1950 1    50   Input ~ 0
 Motor_toggle2
-Text GLabel 6400 1150 1    50   Input ~ 0
-Motor_toggle3
-Text GLabel 6500 1900 1    50   Input ~ 0
-Motor_toggle4
 $Comp
 L Device:R R?
 U 1 1 5C85631D
@@ -1496,10 +1492,6 @@ Text GLabel 3350 4200 2    50   Input ~ 0
 Motor_toggle1
 Text GLabel 3350 4300 2    50   Input ~ 0
 Motor_toggle2
-Text GLabel 3350 4400 2    50   Input ~ 0
-Motor_toggle3
-Text GLabel 3350 4500 2    50   Input ~ 0
-Motor_toggle4
 Text GLabel 5850 7100 2    50   Input ~ 0
 TC_PD0
 Text GLabel 1950 5200 0    50   Input ~ 0
@@ -1650,10 +1642,6 @@ Text GLabel 8900 5050 1    50   Input ~ 0
 Moto2r_toggle1
 Text GLabel 8750 5850 1    50   Input ~ 0
 Motor2_toggle2
-Text GLabel 11000 5050 1    50   Input ~ 0
-Motor3_toggle3
-Text GLabel 11100 5800 1    50   Input ~ 0
-Motor4_toggle4
 $Comp
 L Device:R R?
 U 1 1 5C881840
@@ -1768,8 +1756,25 @@ Text GLabel 3350 4800 2    50   Input ~ 0
 Motor2_toggle2
 Text GLabel 3350 4700 2    50   Input ~ 0
 Moto2r_toggle1
-Text GLabel 3350 4900 2    50   Input ~ 0
-Motor3_toggle3
-Text GLabel 3350 5000 2    50   Input ~ 0
-Motor4_toggle4
+$Comp
+L power:+3.3V #PWR?
+U 1 1 5C84969F
+P 11050 1300
+F 0 "#PWR?" H 11050 1150 50  0001 C CNN
+F 1 "+3.3V" V 11065 1428 50  0000 L CNN
+F 2 "" H 11050 1300 50  0001 C CNN
+F 3 "" H 11050 1300 50  0001 C CNN
+	1    11050 1300
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	10900 1300 11050 1300
+Text GLabel 11000 5050 1    50   Input ~ 0
+Moto2r_toggle1
+Text GLabel 11100 5800 1    50   Input ~ 0
+Motor2_toggle2
+Text GLabel 6500 1900 1    50   Input ~ 0
+Motor_toggle2
+Text GLabel 6400 1150 1    50   Input ~ 0
+Motor_toggle1
 $EndSCHEMATC
