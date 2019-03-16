@@ -4,7 +4,7 @@ EELAYER 26 0
 EELAYER END
 $Descr A4 11693 8268
 encoding utf-8
-Sheet 1 13
+Sheet 1 15
 Title ""
 Date ""
 Rev ""
@@ -959,17 +959,6 @@ Therm_ADCA0
 Text GLabel 3350 3800 2    50   Input ~ 0
 Therm_ADCA0
 $Comp
-L Connector_Generic:Conn_02x04_Counter_Clockwise J3
-U 1 1 5C8A3415
-P 7250 1950
-F 0 "J3" H 7300 2267 50  0000 C CNN
-F 1 "MS5607" H 7300 2176 50  0000 C CNN
-F 2 "" H 7250 1950 50  0001 C CNN
-F 3 "~" H 7250 1950 50  0001 C CNN
-	1    7250 1950
-	1    0    0    -1  
-$EndComp
-$Comp
 L power:+3.3V #PWR037
 U 1 1 5C8A34AC
 P 7050 1850
@@ -1603,4 +1592,15 @@ Text GLabel 10150 5750 2    50   Input ~ 0
 MoterRIN2
 Text GLabel 9300 5750 0    50   Input ~ 0
 MotorFIN2
+$Comp
+L Cansat-rescue:Pressure_MS5607 J?
+U 1 1 5C8FC930
+P 7250 1950
+F 0 "J?" H 7300 2275 50  0000 C CNN
+F 1 "Pressure_MS5607" H 7300 2184 50  0000 C CNN
+F 2 "" H 7250 1950 50  0001 C CNN
+F 3 "~" H 7250 1950 50  0001 C CNN
+	1    7250 1950
+	1    0    0    -1  
+$EndComp
 $EndSCHEMATC
