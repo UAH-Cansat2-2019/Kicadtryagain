@@ -517,7 +517,7 @@ U 1 1 5C872BCE
 P 6250 7250
 F 0 "buzzer1" H 6300 7467 50  0000 C CNN
 F 1 "buzzer" H 6300 7400 50  0000 C CNN
-F 2 "Connector_PinSocket_2.54mm:PinSocket_1x03_P2.54mm_Vertical" H 6250 7250 50  0001 C CNN
+F 2 "Connector_PinSocket_2.54mm:PinSocket_1x02_P2.54mm_Vertical" H 6250 7250 50  0001 C CNN
 F 3 "~" H 6250 7250 50  0001 C CNN
 	1    6250 7250
 	1    0    0    -1  
@@ -1700,4 +1700,122 @@ Wire Wire Line
 Wire Wire Line
 	1550 7200 1250 7200
 Connection ~ 1250 7200
+$Comp
+L Connector_Generic:Conn_01x01 J9
+U 1 1 5C92ECB5
+P 7750 5850
+F 0 "J9" V 7623 5930 50  0000 L CNN
+F 1 "3v" V 7714 5930 50  0000 L CNN
+F 2 "Connector_PinSocket_2.54mm:PinSocket_1x01_P2.54mm_Vertical" H 7750 5850 50  0001 C CNN
+F 3 "~" H 7750 5850 50  0001 C CNN
+	1    7750 5850
+	0    1    1    0   
+$EndComp
+$Comp
+L Connector_Generic:Conn_01x01 J10
+U 1 1 5C92EE16
+P 7950 6250
+F 0 "J10" V 7823 6330 50  0000 L CNN
+F 1 "SDA" V 7914 6330 50  0000 L CNN
+F 2 "Connector_PinSocket_2.54mm:PinSocket_1x01_P2.54mm_Vertical" H 7950 6250 50  0001 C CNN
+F 3 "~" H 7950 6250 50  0001 C CNN
+	1    7950 6250
+	0    1    1    0   
+$EndComp
+$Comp
+L Connector_Generic:Conn_01x01 J8
+U 1 1 5C92EE9C
+P 7550 6300
+F 0 "J8" V 7423 6380 50  0000 L CNN
+F 1 "SCL" V 7514 6380 50  0000 L CNN
+F 2 "Connector_PinSocket_2.54mm:PinSocket_1x01_P2.54mm_Vertical" H 7550 6300 50  0001 C CNN
+F 3 "~" H 7550 6300 50  0001 C CNN
+	1    7550 6300
+	0    1    1    0   
+$EndComp
+$Comp
+L Connector_Generic:Conn_01x01 J7
+U 1 1 5C92EF26
+P 7300 5850
+F 0 "J7" V 7173 5930 50  0000 L CNN
+F 1 "GND" V 7264 5930 50  0000 L CNN
+F 2 "Connector_PinSocket_2.54mm:PinSocket_1x01_P2.54mm_Vertical" H 7300 5850 50  0001 C CNN
+F 3 "~" H 7300 5850 50  0001 C CNN
+	1    7300 5850
+	0    1    1    0   
+$EndComp
+$Comp
+L Connector_Generic:Conn_01x01 J11
+U 1 1 5C930677
+P 8150 5900
+F 0 "J11" V 8023 5980 50  0000 L CNN
+F 1 "5V" V 8114 5980 50  0000 L CNN
+F 2 "Connector_PinSocket_2.54mm:PinSocket_1x01_P2.54mm_Vertical" H 8150 5900 50  0001 C CNN
+F 3 "~" H 8150 5900 50  0001 C CNN
+	1    8150 5900
+	0    1    1    0   
+$EndComp
+$Comp
+L Connector_Generic:Conn_01x01 J12
+U 1 1 5C9313B4
+P 8450 6250
+F 0 "J12" V 8323 6330 50  0000 L CNN
+F 1 "Tx" V 8414 6330 50  0000 L CNN
+F 2 "Connector_PinSocket_2.54mm:PinSocket_1x01_P2.54mm_Vertical" H 8450 6250 50  0001 C CNN
+F 3 "~" H 8450 6250 50  0001 C CNN
+	1    8450 6250
+	0    1    1    0   
+$EndComp
+$Comp
+L Connector_Generic:Conn_01x01 J13
+U 1 1 5C931444
+P 8700 6000
+F 0 "J13" V 8573 6080 50  0000 L CNN
+F 1 "Rx" V 8664 6080 50  0000 L CNN
+F 2 "Connector_PinSocket_2.54mm:PinSocket_1x01_P2.54mm_Vertical" H 8700 6000 50  0001 C CNN
+F 3 "~" H 8700 6000 50  0001 C CNN
+	1    8700 6000
+	0    1    1    0   
+$EndComp
+Text GLabel 7950 6050 1    50   Input ~ 0
+SDA
+Text GLabel 7550 6100 1    50   Input ~ 0
+SCL
+Text GLabel 8700 5800 1    50   Input ~ 0
+RX_PD6
+Text GLabel 8450 6050 1    50   Input ~ 0
+TX_PD7
+$Comp
+L power:GND #PWR0101
+U 1 1 5C9348F6
+P 7300 5650
+F 0 "#PWR0101" H 7300 5400 50  0001 C CNN
+F 1 "GND" H 7305 5477 50  0000 C CNN
+F 2 "" H 7300 5650 50  0001 C CNN
+F 3 "" H 7300 5650 50  0001 C CNN
+	1    7300 5650
+	-1   0    0    1   
+$EndComp
+$Comp
+L power:+3.3V #PWR0102
+U 1 1 5C9349F1
+P 7750 5650
+F 0 "#PWR0102" H 7750 5500 50  0001 C CNN
+F 1 "+3.3V" H 7765 5823 50  0000 C CNN
+F 2 "" H 7750 5650 50  0001 C CNN
+F 3 "" H 7750 5650 50  0001 C CNN
+	1    7750 5650
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:+5V #PWR0103
+U 1 1 5C934A7D
+P 8150 5700
+F 0 "#PWR0103" H 8150 5550 50  0001 C CNN
+F 1 "+5V" H 8165 5873 50  0000 C CNN
+F 2 "" H 8150 5700 50  0001 C CNN
+F 3 "" H 8150 5700 50  0001 C CNN
+	1    8150 5700
+	1    0    0    -1  
+$EndComp
 $EndSCHEMATC
