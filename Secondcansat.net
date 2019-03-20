@@ -1,7 +1,7 @@
 (export (version D)
   (design
     (source C:\Users\natha\Documents\GitHub\Kicadtryagain\Secondcansat.sch)
-    (date "3/19/2019 11:23:03 AM")
+    (date "3/20/2019 12:11:59 PM")
     (tool "Eeschema (5.0.0)")
     (sheet (number 1) (name /) (tstamps /)
       (title_block
@@ -228,7 +228,7 @@
       (tstamp 5C86C93F))
     (comp (ref buzzer1)
       (value buzzer)
-      (footprint Connector_PinSocket_2.54mm:PinSocket_1x03_P2.54mm_Vertical)
+      (footprint Connector_PinSocket_2.54mm:PinSocket_1x02_P2.54mm_Vertical)
       (datasheet ~)
       (libsource (lib Connector_Generic) (part Conn_02x01) (description "Generic connector, double row, 02x01, this symbol is compatible with counter-clockwise, top-bottom and odd-even numbering schemes., script generated (kicad-library-utils/schlib/autogen/connector/)"))
       (sheetpath (names /) (tstamps /))
