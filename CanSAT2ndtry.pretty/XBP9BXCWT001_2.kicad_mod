@@ -1,4 +1,4 @@
-(module XBP9BXCWT001 (layer F.Cu) (tedit 5C96A7FA)
+(module XBP9BXCWT001_2 (layer F.Cu) (tedit 5C96A7FA)
   (descr XBP9B-XCWT-001-2)
   (tags "Integrated Circuit")
   (fp_text reference IC1 (at 25.146 9.398 270) (layer F.SilkS)
