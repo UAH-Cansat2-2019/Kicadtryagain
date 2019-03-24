@@ -198,7 +198,7 @@ $Comp
 L Connector_Generic:Conn_01x06 J1
 U 1 1 5C83CABD
 P 4800 3750
-F 0 "J1" V 4766 4030 50  0000 L CNN
+F 0 "J1" V 4800 4050 50  0000 L CNN
 F 1 "OpenlogBreakout" V 4675 4030 50  0000 L CNN
 F 2 "Connector_PinSocket_2.54mm:PinSocket_1x06_P2.54mm_Vertical" H 4800 3750 50  0001 C CNN
 F 3 "~" H 4800 3750 50  0001 C CNN

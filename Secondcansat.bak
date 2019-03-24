@@ -1222,8 +1222,6 @@ F 3 "~" H 7250 1950 50  0001 C CNN
 	1    7250 1950
 	1    0    0    -1  
 $EndComp
-Wire Wire Line
-	1050 850  1050 1250
 $Comp
 L Device:Q_PMOS_DGS Q1
 U 1 1 5C8F92F5
@@ -1888,30 +1886,6 @@ F 3 "~" H 850 650 50  0001 C CNN
 	1    850  650 
 	1    0    0    -1  
 $EndComp
-Wire Wire Line
-	1150 650  1150 500 
-Wire Wire Line
-	1150 500  600  500 
-Wire Wire Line
-	600  500  600  750 
-Wire Wire Line
-	600  750  650  750 
-Wire Wire Line
-	1150 750  1200 750 
-Wire Wire Line
-	1200 750  1200 450 
-Wire Wire Line
-	1200 450  650  450 
-Wire Wire Line
-	650  450  650  650 
-Wire Wire Line
-	600  750  600  850 
-Wire Wire Line
-	600  850  1050 850 
-Connection ~ 600  750 
-Wire Wire Line
-	1150 750  1150 850 
-Connection ~ 1150 750 
 Text GLabel 4700 3950 3    50   Input ~ 0
 USART_RX_PC2
 Text GLabel 4600 3950 3    50   Input ~ 0
@@ -1929,4 +1903,16 @@ Text GLabel 1950 4900 0    50   Input ~ 0
 cameraon
 Text GLabel 5400 3100 0    50   Input ~ 0
 cameraon
+Wire Wire Line
+	650  750  650  650 
+Wire Wire Line
+	1150 750  1150 850 
+Wire Wire Line
+	1150 650  1200 650 
+Wire Wire Line
+	1200 650  1200 900 
+Wire Wire Line
+	1200 900  1050 900 
+Wire Wire Line
+	1050 900  1050 1250
 $EndSCHEMATC
