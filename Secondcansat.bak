@@ -173,17 +173,6 @@ USART_TX_PC3
 Text GLabel 3350 5400 2    50   Input ~ 0
 USART_RX_PC2
 $Comp
-L Connector_Generic:Conn_01x02 J2
-U 1 1 5C83BAE9
-P 5700 2700
-F 0 "J2" V 5573 2780 50  0000 L CNN
-F 1 "camerapower" V 5664 2780 50  0000 L CNN
-F 2 "Connector_PinSocket_2.54mm:PinSocket_1x02_P2.54mm_Vertical" H 5700 2700 50  0001 C CNN
-F 3 "~" H 5700 2700 50  0001 C CNN
-	1    5700 2700
-	0    -1   -1   0   
-$EndComp
-$Comp
 L power:GND #PWR032
 U 1 1 5C83C31D
 P 5700 3300
@@ -198,7 +187,7 @@ $Comp
 L Connector_Generic:Conn_01x06 J1
 U 1 1 5C83CABD
 P 4800 3750
-F 0 "J1" V 4766 4030 50  0000 L CNN
+F 0 "J1" V 4800 4050 50  0000 L CNN
 F 1 "OpenlogBreakout" V 4675 4030 50  0000 L CNN
 F 2 "Connector_PinSocket_2.54mm:PinSocket_1x06_P2.54mm_Vertical" H 4800 3750 50  0001 C CNN
 F 3 "~" H 4800 3750 50  0001 C CNN
@@ -1534,7 +1523,7 @@ L power:+5V #PWR033
 U 1 1 5C970693
 P 5800 2900
 F 0 "#PWR033" H 5800 2750 50  0001 C CNN
-F 1 "+5V" H 5815 3073 50  0000 C CNN
+F 1 "+5V" H 5750 3100 50  0000 C CNN
 F 2 "" H 5800 2900 50  0001 C CNN
 F 3 "" H 5800 2900 50  0001 C CNN
 	1    5800 2900
@@ -1915,4 +1904,26 @@ Wire Wire Line
 	1200 900  1050 900 
 Wire Wire Line
 	1050 900  1050 1250
+$Comp
+L Connector_Generic:Conn_01x03 J2
+U 1 1 5C99FF9D
+P 5800 2700
+F 0 "J2" V 5766 2512 50  0000 R CNN
+F 1 "Camera" V 5675 2512 50  0000 R CNN
+F 2 "Connector_PinSocket_2.54mm:PinSocket_1x03_P2.54mm_Vertical" H 5800 2700 50  0001 C CNN
+F 3 "~" H 5800 2700 50  0001 C CNN
+	1    5800 2700
+	0    -1   -1   0   
+$EndComp
+$Comp
+L power:GND #PWR0105
+U 1 1 5C9A036D
+P 5900 2900
+F 0 "#PWR0105" H 5900 2650 50  0001 C CNN
+F 1 "GND" H 6050 2800 50  0000 C CNN
+F 2 "" H 5900 2900 50  0001 C CNN
+F 3 "" H 5900 2900 50  0001 C CNN
+	1    5900 2900
+	1    0    0    -1  
+$EndComp
 $EndSCHEMATC
